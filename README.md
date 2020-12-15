@@ -5,7 +5,7 @@ Fully functional ELK Stack server used to set up a cloud monitoring system.
 
 The files in this repository were used to configure the network depicted below.
 
-Diagrams/Diagram.PNG
+Diagrams/Diagram.png
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the Filebeat-playbook.yml file may be used to install only certain pieces of it, such as Filebeat.
 
@@ -74,7 +74,7 @@ The playbook implements the following tasks:
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-~/Desktop/ElkGotses/ELK.png
+Screenshots/ELK.png
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
@@ -95,11 +95,4 @@ In order to use the playbook, you will need to have an Ansible control node alre
 SSH into the control node and follow the steps below:
 - Copy the playbook files to the ansible control node.
 - Update the hosts file to include which VM's to run each playbook on.
-- Run the playbook, and navigate to the ELK VM to check that the installation worked as expected.
-
-
-- _Which file is the playbook? Where do you copy it?_
-- _Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
-- _Which URL do you navigate to in order to check that the ELK server is running? http://40.88.226.66:5601/app/kibana#/home
-
-_As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
+- Run the playbook, and navigate to the url http://40.88.226.66:5601/app/kibana#/home to check that the installation worked as expected.
