@@ -9,7 +9,8 @@ The files in this repository were used to configure the network depicted below.
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the Filebeat-playbook.yml file may be used to install only certain pieces of it, such as Filebeat.
 
-  - ---
+```
+---
 - name: installing and launching filebeat
   hosts: webservers
   become: yes
@@ -42,6 +43,7 @@ This document contains the following details:
   - Beats in Use
   - Machines Being Monitored
 - How to Use the Ansible Build
+```
 
 
 ### Description of the Topology
@@ -98,7 +100,7 @@ The playbook implements the following tasks:
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-Screenshots/ELK.png
+![alt text](https://github.com/sgotses/ElkGotses/blob/main/Screenshots/ELK.PNG)
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
